@@ -1,0 +1,12 @@
+# Ignorar la carpeta de dependencias de Node.js
+node_modules/
+
+# --- Otros archivos y carpetas que generalmente se ignoran ---
+
+# Archivos de logs
+npm-debug.log*
+
+# Archivos de build y temporales
+/dist
+/build
+.env

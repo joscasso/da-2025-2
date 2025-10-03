@@ -1,0 +1,14 @@
+<div id="contenedor">
+  <p id="p1">Párrafo a eliminar</p>
+  <p id="p2">2 Párrafo a eliminar</p>
+</div>
+
+<script>
+  const contenedor = document.getElementById("contenedor");
+  const parrafo = document.getElementById("p1");
+
+  parrafo.onclick = () => {
+    contenedor.removeChild(parrafo);
+  }
+  
+</script>

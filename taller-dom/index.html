@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo-principal">Título de la página</h1>
+    <p class="parrafo">Este es un párrafo.</p>
+    <button>Clic aquí</button>
+
+    <style>.rojo { color: red; }</style>
+    <p id="mensaje">Mensaje inicial.</p>
+    <button id="cambiar">Cambiar Color</button>    
+    
+    <script>
+        const titulo = document.getElementById('titulo-principal');
+        const parrafo = document.querySelector('.parrafo');
+        const botones = document.querySelectorAll('button');
+
+        console.log(titulo.textContent);
+        console.log(parrafo.textContent);
+        console.log(`Hay ${botones.length} botones en la página.`);   
+        
+        
+        titulo.textContent = 'Nuevo Título';
+        titulo.style.color = 'blue';
+        parrafo.innerHTML = 'Esto es <strong>HTML</strong>.';
+
+        const enlace = document.createElement('a');
+        enlace.href = 'https://google.com';
+        enlace.textContent = 'Ir a Google';
+        document.body.appendChild(enlace);   
+        
+        const mensaje = document.getElementById('mensaje');
+        const boton = document.getElementById('cambiar');
+
+        // Lógica: Cambiar estilo con un clic
+        boton.onclick = () => {
+            mensaje.style.fontSize = '20px';
+            mensaje.classList.toggle('rojo');
+        };        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "ciudad": "Nueva York",
+    "temperatura": 18,
+    "condicion": "Parcialmente nublado",
+    "icono": "partly-cloudy.png",
+    "humedad": "65%",
+    "viento": "15 km/h"
+  },
+  {
+    "id": 2,
+    "ciudad": "París",
+    "temperatura": 12,
+    "condicion": "Lluvia ligera",
+    "icono": "light-rain.png",
+    "humedad": "80%",
+    "viento": "20 km/h"
+  },
+  {
+    "id": 3,
+    "ciudad": "Tokio",
+    "temperatura": 25,
+    "condicion": "Soleado",
+    "icono": "sunny.png",
+    "humedad": "50%",
+    "viento": "10 km/h"
+  },
+  {
+    "id": 4,
+    "ciudad": "Sídney",
+    "temperatura": 22,
+    "condicion": "Nublado",
+    "icono": "cloudy.png",
+    "humedad": "70%",
+    "viento": "25 km/h"
+  }
+]

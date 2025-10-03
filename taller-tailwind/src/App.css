@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+            /* Personalizar colores */  
+ 
+/* Añade un color llamado 'brand' */ 
+--color-brand: #3b82f6; 
+/* Añade un color semántico */ 
+--color-success: #10b981; 
+/* Define tu escala completa para el color 'primary' */ 
+--color-primary-50: #eff6ff; /* Tono más claro */ 
+--color-primary-100: #dbeafe; 
+--color-primary-200: #bfdbfe; 
+/* ... (otros tonos) */ 
+--color-primary-500: #3b82f6; /* Tono principal */ 
+--color-primary-900: #1e40af; /* Tono más oscuro */ 
+--color-primary-950: #172554;
+
+/* Personalizar espaciados */
+/* 1. Añadir un valor de espaciado nuevo y grande */ 
+--spacing-12xl: 3rem; /* Generará clases como p-12xl, m-12xl, w-12xl, etc. */ 
+
+/* 2. Sobrescribir un valor predeterminado (el 8 por defecto es 2rem) */
+--spacing-8: 2.25rem; /* El nuevo valor de la clase p-8 ahora será 2.25rem */ 
+/* 3. Definir un espaciado semántico para un componente específico */
+--spacing-card-gap: 1.5rem; /* Puede usarse con gap-card-gap */
+}
