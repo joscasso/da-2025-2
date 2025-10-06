@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taller-router</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function tareaSincrona() {
+        console.log("1. Empieza la tarea.");
+        // Simulación de un cálculo muy pesado que "bloquea"
+        for (let i = 0; i < 9000000000; i++) {} 
+        console.log("2. Tarea pesada terminada.");
+        console.log("3. Continúa la ejecución.");
+      }
+
+      tareaSincrona();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
