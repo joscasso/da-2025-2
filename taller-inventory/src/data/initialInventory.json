@@ -1,0 +1,22 @@
+[
+  { "id": 1, "name": "Laptop Pro X1 (16GB/512GB)", "stock": 15, "price": 1200.00 },
+  { "id": 2, "name": "Teclado Mecánico RGB", "stock": 8, "price": 85.50 },
+  { "id": 3, "name": "Monitor Curvo 4K 32\"", "stock": 0, "price": 550.00 },
+  { "id": 4, "name": "Mouse Inalámbrico Ergonómico", "stock": 45, "price": 35.00 },
+  { "id": 5, "name": "Webcam HD con Micrófono", "stock": 22, "price": 49.99 },
+  { "id": 6, "name": "Disco Duro Externo 2TB", "stock": 12, "price": 79.99 },
+  { "id": 7, "name": "Adaptador USB-C a HDMI", "stock": 75, "price": 19.50 },
+  { "id": 8, "name": "Silla Gamer Premium", "stock": 3, "price": 350.00 },
+  { "id": 9, "name": "Cable Ethernet Cat 6 (10m)", "stock": 150, "price": 12.00 },
+  { "id": 10, "name": "Router Wi-Fi 6 Doble Banda", "stock": 10, "price": 99.00 },
+  { "id": 11, "name": "Tableta Gráfica Profesional", "stock": 5, "price": 250.00 },
+  { "id": 12, "name": "Batería Externa 20000mAh", "stock": 30, "price": 45.00 },
+  { "id": 13, "name": "Auriculares Inalámbricos Noise Cancelling", "stock": 18, "price": 150.00 },
+  { "id": 14, "name": "Funda Protectora Laptop 14\"", "stock": 60, "price": 25.00 },
+  { "id": 15, "name": "Micrófono Condensador USB", "stock": 7, "price": 65.00 },
+  { "id": 16, "name": "Switch de Red 8 Puertos", "stock": 14, "price": 55.00 },
+  { "id": 17, "name": "Impresora Láser Monocromática", "stock": 0, "price": 199.99 },
+  { "id": 18, "name": "Memoria USB 128GB", "stock": 90, "price": 18.00 },
+  { "id": 19, "name": "Kit de Limpieza Pantallas", "stock": 110, "price": 9.99 },
+  { "id": 20, "name": "Tarjeta Gráfica RTX 4070", "stock": 2, "price": 650.00 }
+]

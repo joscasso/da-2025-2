@@ -8,17 +8,45 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      function tareaSincrona() {
-        console.log("1. Empieza la tarea.");
-        // Simulación de un cálculo muy pesado que "bloquea"
-        for (let i = 0; i < 9000000000; i++) {} 
-        console.log("2. Tarea pesada terminada.");
-        console.log("3. Continúa la ejecución.");
+   <script>
+ // Esta función simula una operación que toma tiempo (2 segundos).
+    function hornearPizza() {
+      // La Promesa recibe una función con dos callbacks: resolve y reject.
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          const todoSalióBien = false; // Cambia a false para simular un error
+          if (todoSalióBien) {
+            // Llama a resolve() cuando la operación fue exitosa.
+            resolve("Pizza de Pepperoni caliente"); 
+          } else {
+            // Llama a reject() si hubo un problema.
+            reject("Lo sentimos, la máquina de hornear falló."); 
+          }
+        }, 10000); // 2000 ms = 2 segundos
+      });
+    }
+ 
+    async function pedirPizza() {
+      console.log("1. Hago el pedido. (Promesa Pendiente)");
+      try {
+        // 🍕 await PAUSA esta función, esperando el resultado.
+        // PERO NO BLOQUEA toda la aplicación.
+        const resultado = await hornearPizza(); 
+        // El código solo continúa aquí si la Promesa fue exitosa (resolved).
+        console.log("3. ¡Éxito! Recibí mi:", resultado); 
+      } catch (error) {
+        // Si la Promesa falla (rejected), el código salta al catch.
+        console.error("3. ¡Fallo! Error:", error); 
       }
+    }
+    
+    // Llama a la función asíncrona
+    pedirPizza(); 
+    console.log("2. Mientras el horno trabaja, la aplicación sigue siendo fluida.")
+  </script>   
 
-      tareaSincrona();
-    </script>
     <script type="module" src="/src/main.tsx"></script>
+
+  
   </body>
 </html>
