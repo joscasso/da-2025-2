@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>taller-axios</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      async function UserCRUD() {
+        // GET Consultar usuario
+        console.log("** GET Consultar usuario 2")
+        await fetch("https://jsonplaceholder.typicode.com/usersx/2")
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+
+        // POST Crear usuario
+        console.log("** POST Crear usuario 99")
+        await fetch("https://jsonplaceholder.typicode.com/users", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ id: 99, name: "Pepito Perez", username: "pe.pe", email:"pperez@gmail.com" }),
+        })
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+
+        // PUT Actualizar un usuario
+        console.log("** PUT Actualizar un usuario 3")
+        await fetch("https://jsonplaceholder.typicode.com/users/3", {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ name: "Maria (Cambio de nombre)"}),
+        })
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+
+        // DELETE Borrar un usuario 4
+        console.log("DELETE Borrar un usuario 4")
+        await fetch("https://jsonplaceholder.typicode.com/users/4", {
+            method: "DELETE",
+        })
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+        // PATCH Actualizar edad usuario 5
+        console.log("PATCH Actualizar parcialmenete un usuario")
+        await fetch("https://jsonplaceholder.typicode.com/users/5", {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email: "p.p@gmail.com" }),
+        })
+            .then((response) => response.json())
+            .then((data) => console.log(data));   
+      }
+      //UserCRUD();
+  </script>
+  </body>
+</html>
