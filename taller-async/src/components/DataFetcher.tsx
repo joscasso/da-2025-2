@@ -20,7 +20,7 @@ const DataFetcher = () => {
       setError(null);
       try {
         // Petición de Request usando fetch y await (manejo de Promesa)
-        const response = await fetch('https://1jsonplaceholder.typicode.com/posts?_limit=5'); 
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5'); 
 
         if (!response.ok) {
           throw new Error(`Error HTTP: ${response.status}`);
