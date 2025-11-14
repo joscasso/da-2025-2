@@ -9,4 +9,5 @@ export default defineConfig({
  build: {
     target: 'es2020', // Mantener el target de producción
   },  
+  
 })
