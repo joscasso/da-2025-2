@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "serve -s dist -l $PORT"   
+    "start": "serve -s dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.76.1",
@@ -16,6 +16,7 @@
     "posthog-js": "^1.290.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "serve": "^14.2.5",
     "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
