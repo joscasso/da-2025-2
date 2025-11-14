@@ -22,7 +22,7 @@ const Dashboard = ({ user, onSignOut }) => {
     <div className="min-h-screen bg-slate-100 p-8">
       <header className="flex justify-between items-center p-4 bg-white rounded-xl shadow-lg mb-8">
         <h1 className="text-3xl font-bold text-indigo-700">
-          <i className="fas fa-cubes mr-2"></i> ¡Administrador de Archivos!
+          <i className="fas fa-cubes mr-2"></i> ¡¡Administrador de Archivos!!
         </h1>
         <div className="flex items-center space-x-4">
           <span className="text-lg font-medium text-slate-700">
